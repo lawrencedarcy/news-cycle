@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './NavBar.css';
+import Weather from '../Weather/Weather';
 
 function NavBar(props) {
 
-  const API = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=bb4892467570d0dc3849658584cde7d5';
+  const API = 'https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=bb4892467570d0dc3849658584cde7d5';
   const [weather, setWeather] = useState();
 
 
@@ -24,7 +25,7 @@ function NavBar(props) {
     <div className="navbar-wrapper">
       <div className="navbar-top">
       <div ><span className="navbar-logo">News</span><span className="navbar-logo mod">Cycle</span> </div> 
-<div className="navbar-weather">Weather  temp: {weather && weather.main.temp}</div>
+<div className="navbar-weather"><Weather weather={weather}/> </div>
       </div>
     <div className="navbar">
    

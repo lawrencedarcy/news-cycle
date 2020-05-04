@@ -24,9 +24,9 @@
 
 .navbar-weather {
 align-self: flex-end;
-width: 200px;
-height: 90px;
-border: 1px solid black;
+width: 120px;
+height: 5rem;
+padding-right: 3.5rem;
 }
 
 .navbar {

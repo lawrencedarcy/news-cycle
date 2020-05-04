@@ -7,7 +7,9 @@ function NewsCard({ story }) {
       <div className="card_content-wrapper">
       <div className="card_source">{story.source.name}</div>
        <div className="card_headline">{story.title}</div>
-       <div className="card_standfirst">{story.description.split('.', 2).join('')}</div>
+       <div className="card_standfirst">{story.description &&  story.description.split('.', 2).join('')}</div>
+       <div className="card_btn">READ MORE</div>
+
        </div>
     </div>
   );
