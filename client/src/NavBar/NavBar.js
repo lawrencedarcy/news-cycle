@@ -23,7 +23,7 @@ function NavBar(props) {
   return (
     <div className="navbar-wrapper">
       <div className="navbar-top">
-      <div className="navbar-logo">NewsCycle </div> 
+      <div ><span className="navbar-logo">News</span><span className="navbar-logo mod">Cycle</span> </div> 
 <div className="navbar-weather">Weather  temp: {weather && weather.main.temp}</div>
       </div>
     <div className="navbar">
