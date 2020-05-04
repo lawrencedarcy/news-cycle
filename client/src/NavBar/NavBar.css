@@ -4,28 +4,59 @@
   width: 100%;
   padding: .75rem;
   display: fixed;
-  background-color: #A1C6DD;
-  height: 3.5rem;
+  background-color: #9E0000;
+  height: 11rem;
   font-weight: medium;
+  
+
+}
+
+.navbar-top {
+
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar-weather {
+align-self: flex-end;
+width: 200px;
+height: 90px;
+border: 1px solid black;
 }
 
 .navbar {
-
+  color: white;
+  border-top: 1px solid white;
+  margin: .5rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
+  
+
 }
 
 .navbar-logo {
-
+  color: white;
+  
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 3.55rem;
+  font-weight: 500;
+ 
   
 }
 
-.navbar-items {
- 
+.navbar-item {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  
+  padding: .3rem 1rem;
 }
 /* 
 {
