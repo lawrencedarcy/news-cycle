@@ -14,29 +14,36 @@
 .card_source {
   text-transform: lowercase;
   padding: .5rem 0;
+  align-self: flex-end;
+
 }
 .card_headline {
-
+  padding: .5rem 0;
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .card_standfirst {
-  padding: 1rem 0;
-
+  padding: 1rem 0 1rem;
+ 
 }
 
 .card_btn {
-  border: .5px solid black;
+  border: .5px solid white;
   align-self: flex-end;
-  width: 6rem;
+  width: 6.4rem;
   height: 2rem;
-  padding: .3rem;
-  font-size: .8rem;
+  padding: .4rem;
+  font-size: .9rem;
   cursor: pointer;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0f7c63;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 1rem 0 0 0 ;
 }
