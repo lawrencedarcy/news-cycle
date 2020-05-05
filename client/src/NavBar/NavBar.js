@@ -10,7 +10,6 @@ function NavBar({ sectionChange }) {
 
   useEffect(() => {
     axios.get(API).then(res => {
-      console.log(res.data);
       setWeather(res.data);
     });
   }, []);
@@ -35,10 +34,10 @@ function NavBar({ sectionChange }) {
         <a className='navbar-item' href="">
           News
         </a>
-        <btn className='navbar-item' onClick={() => clickHandler('technology')}>Technology</btn>
-        <btn className='navbar-item' onClick={() => clickHandler('sport')}>Sport</btn>
-        <btn className='navbar-item' onClick={() => clickHandler('environment')}>Environment</btn>
-        <btn className='navbar-item' onClick={() => clickHandler('lifestyle')}>Lifestyle</btn>
+        <button className='navbar-item' onClick={() => clickHandler('technology')}>Technology</button>
+        <button className='navbar-item' onClick={() => clickHandler('sport')}>Sport</button>
+        <button className='navbar-item' onClick={() => clickHandler('environment')}>Environment</button>
+        <button className='navbar-item' onClick={() => clickHandler('lifestyle')}>Lifestyle</button>
       </div>
     </div>
   );

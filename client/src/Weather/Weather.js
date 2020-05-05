@@ -3,11 +3,10 @@ import './Weather.css';
 
 function Weather({weather}) {
   
-  console.log('weather icon' , weather && weather.weather[0].icon);
   return (
     <div className='weather-box'>
 
-    <img className='icon' src={`http://openweathermap.org/img/wn/${weather && weather.weather[0].icon}@2x.png`}></img>
+    <img alt='weather' className='icon' src={weather &&  `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img>
 
     <div className='wrapper'>
        <div className='location'> {weather && weather.name}</div>
