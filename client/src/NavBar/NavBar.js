@@ -20,20 +20,23 @@ function NavBar(props) {
 
   }, []);
 
+  const clickHandler = (genre) => {
+    console.log(genre);
+  }
   
   return (
     <div className="navbar-wrapper">
       <div className="navbar-top">
-      <div ><span className="navbar-logo">News</span><span className="navbar-logo mod">Cycle</span> </div> 
+      <div className="flex"><span className="navbar-logo">News</span><span className="navbar-logo mod">Cycle</span> </div> 
 <div className="navbar-weather"><Weather weather={weather}/> </div>
       </div>
     <div className="navbar">
    
-    <div className="navbar-item">Politics</div>
-    <div className="navbar-item">Technology</div>
-    <div className="navbar-item">Sport</div>
-    <div className="navbar-item">Politics</div>
-    <div className="navbar-item">Technology</div>
+    <btn className="navbar-item" onClick={() => clickHandler('politics')}>Politics</btn>
+    <btn className="navbar-item">Technology</btn>
+    <btn className="navbar-item">Sport</btn>
+    <btn className="navbar-item">Politics</btn>
+    <btn className="navbar-item">Technology</btn>
     </div> 
     </div>
   );

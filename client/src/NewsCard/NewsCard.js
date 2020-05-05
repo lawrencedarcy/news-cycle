@@ -12,14 +12,20 @@ const clickHandler = () => {
 
   return (
     <div className="card">
+      <div className="card-sidebar">
+
+      <img className="sidebar_image" src={story.urlToImage && story.urlToImage}></img>
+
+      </div>
       <div className="card_content-wrapper">
       <div className="card_source">{story.source.name}</div>
-       <div className="card_headline">{story.title}</div>
+      <img className="card_image" src={story.urlToImage && story.urlToImage}></img>
+       <div className="card_headline">{story.title.split('-').splice(0, story.title.split('-').length-1).join('-')}</div>
        {!more ? <div className="card_standfirst">{story.description &&  story.description.split('.', 2).join('')}</div>
-       : <div>{story.content.split('[')[0]}</div> }
+       : <div className="card_standfirst">{story.content.split('[')[0]}</div> }
        {!more && story.content
        ?<div className='card_btn' onClick={clickHandler}>READ MORE </div>
-       :<a className='card_btn' href={story.url} target='_blank'>FULL STORY </a>
+       :<a className='card_btn purple' href={story.url} target='_blank'>FULL STORY </a>
        }
 
        </div>

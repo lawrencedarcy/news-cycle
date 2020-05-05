@@ -11,7 +11,7 @@ function Weather({weather}) {
 
     <div className='wrapper'>
        <div className='location'> {weather && weather.name}</div>
-     <div className='temp'>{weather && weather.main.temp}°C</div>
+     <div className='temp'>{weather && weather.main.temp.toFixed(1)}°C</div>
       
     </div>
     </div>
