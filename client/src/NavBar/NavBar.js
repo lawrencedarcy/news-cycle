@@ -36,7 +36,7 @@ function NavBar({ sectionChange }) {
         </a>
         <button className='navbar-item' onClick={() => clickHandler('technology')}>Technology</button>
         <button className='navbar-item' onClick={() => clickHandler('sport')}>Sport</button>
-        <button className='navbar-item' onClick={() => clickHandler('environment')}>Environment</button>
+        <button className='navbar-item hide' onClick={() => clickHandler('environment')}>Environment</button>
         <button className='navbar-item' onClick={() => clickHandler('lifestyle')}>Lifestyle</button>
       </div>
     </div>

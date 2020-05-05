@@ -18,6 +18,13 @@ button {
   border: none;
 }
 
+button:active, button:hover {
+  text-decoration: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
 .navbar-top {
   margin-top: 1rem;
   margin-bottom: 1.4rem;
@@ -86,4 +93,30 @@ height: 4.6rem;
 
 .navbar-item:hover{
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 450px) {
+  .hide {
+    display: none;
+  }
+
+  .navbar-logo {
+    font-size: 2.1rem;
+  }
+
+  .navbar-weather {
+    display: none 
+  }
+
+  .navbar-item {
+    font-size: 0.8rem;
+  }
+  .navbar-top {
+    height: 3rem;
+  }
+
+  .navbar-wrapper {
+    height: 6.9rem;
+  }
+  
 }
