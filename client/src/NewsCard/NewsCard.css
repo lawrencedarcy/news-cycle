@@ -60,6 +60,13 @@
   .card{padding: 1rem 2.5rem 1rem 0rem;}
 }
 
+@media only screen and (max-width: 500px) {
+  .card{
+    padding: 1rem 1rem;
+  }
+  
+}
+
 .card_headline {
   padding: .5rem 0;
   font-weight: bold;
