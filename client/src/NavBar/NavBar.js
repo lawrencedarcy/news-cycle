@@ -31,7 +31,7 @@ function NavBar({ sectionChange }) {
         </div>
       </div>
       <div className='navbar'>
-        <a className='navbar-item' href="">
+        <a className='navbar-item' href="/">
           News
         </a>
         <button className='navbar-item' onClick={() => clickHandler('technology')}>Technology</button>
